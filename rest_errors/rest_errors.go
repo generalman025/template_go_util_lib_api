@@ -15,7 +15,7 @@ type RestErr interface {
 }
 
 type restErr struct {
-	// {"message": "message"}
+	// !!! Properties must begin with the CAPITAL character
 	ErrMessage string        `json:"message"`
 	ErrStatus  int           `json:"status"`
 	Err        string        `json:"error"`
